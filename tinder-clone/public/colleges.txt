@@ -1,0 +1,100 @@
+Harvard University
+Stanford University
+Massachusetts Institute of Technology (MIT)
+California Institute of Technology (Caltech)
+Princeton University
+Yale University
+Columbia University
+University of Chicago
+University of Pennsylvania
+Duke University
+Johns Hopkins University
+Northwestern University
+University of California--Berkeley
+University of Michigan--Ann Arbor
+Carnegie Mellon University
+University of California--Los Angeles (UCLA)
+New York University (NYU)
+University of Virginia
+University of North Carolina--Chapel Hill
+University of Southern California (USC)
+Washington University in St. Louis
+Brown University
+Vanderbilt University
+Emory University
+Georgetown University
+University of Notre Dame
+Rice University
+University of California--San Diego
+University of California--Santa Barbara
+University of California--Irvine
+University of Florida
+University of Miami
+University of Texas--Austin
+Boston University
+University of Wisconsin--Madison
+University of Washington
+University of Georgia
+University of Illinois--Urbana-Champaign
+University of Maryland--College Park
+University of Pittsburgh
+University of Minnesota--Twin Cities
+University of Colorado--Boulder
+University of Massachusetts--Amherst
+University of Texas--Dallas
+University of Rochester
+Case Western Reserve University
+University of California--Davis
+University of California--Santa Cruz
+University of California--Riverside
+University of California--Irvine
+University of California--Merced
+Dartmouth College
+Cornell University
+University of California--San Francisco
+University of California--San Diego
+University of California--Los Angeles
+University of California--Berkeley
+University of California--Los Angeles
+University of California--Riverside
+University of California--Santa Cruz
+University of California--San Diego
+University of California--San Francisco
+University of California--Berkeley
+University of California--Irvine
+University of California--Merced
+University of California--Davis
+University of California--Santa Barbara
+University of California--Los Angeles
+University of California--San Diego
+University of California--Irvine
+University of California--Riverside
+University of California--San Francisco
+University of California--Santa Cruz
+University of California--Berkeley
+University of California--Merced
+University of California--Davis
+University of California--Santa Barbara
+University of California--Los Angeles
+University of California--San Diego
+University of California--Irvine
+University of California--Riverside
+University of California--San Francisco
+University of California--Santa Cruz
+University of California--Berkeley
+University of California--Merced
+University of California--Davis
+University of California--Santa Barbara
+University of California--Los Angeles
+University of California--San Diego
+University of California--Irvine
+University of California--Riverside
+University of California--San Francisco
+University of California--Santa Cruz
+University of California--Berkeley
+University of California--Merced
+University of California--Davis
+University of California--Santa Barbara
+University of California--Los Angeles
+University of California--San Diego
+University of California--Irvine
