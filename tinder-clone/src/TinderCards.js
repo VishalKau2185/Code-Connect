@@ -79,56 +79,60 @@ function TinderCards() {
 
             <Button onClick={handleLogout} variant="outlined" color="primary">Logout</Button>
 
-            <div className="tinderCards__cardContainer">
-                <input
-                    type="text"
-                    placeholder="Search by College"
-                    name="college"
-                    list="colleges"
-                    value={selectedCollege}
-                    onChange={handleChange}
-                />
-                <datalist id="colleges">
-                    {collegesList.map((college, index) => (
-                        <option key={index} value={college} />
-                    ))}
-                </datalist>
+            <div className="tinderCards__container">
+                <div className="search-bar">
+                    <input
+                        type="text"
+                        placeholder="Search by College"
+                        name="college"
+                        list="colleges"
+                        value={selectedCollege}
+                        onChange={handleChange}
+                    />
+                    <datalist id="colleges">
+                        {collegesList.map((college, index) => (
+                            <option key={index} value={college} />
+                        ))}
+                    </datalist>
+                </div>
 
-                {people
-                    .filter(person => selectedCollege === '' || person.college === selectedCollege)
-                    .map((person, index) => (
-                        <TinderCard
-                            className="swipe"
-                            key={person.name}
-                            preventSwipe={['up', 'down']}
-                            onSwipe={(direction) => {
-                                if (direction === 'right') {
-                                    // Handle swipe right action if needed
-                                }
-                            }}
-                            onCardLeftScreen={() => setDefaultToPicture(true)}
-                        >
-                            <div
-                                className={`card ${flippedCards[index] ? 'flipped' : ''}`}
-                                onClick={() => {
-                                    const newFlippedCards = [...flippedCards];
-                                    newFlippedCards[index] = !newFlippedCards[index];
-                                    setDefaultToPicture(false);
-                                    setFlippedCards(newFlippedCards);
+                <div className="tinderCards__cardContainer">
+                    {people
+                        .filter(person => selectedCollege === '' || person.college === selectedCollege)
+                        .map((person, index) => (
+                            <TinderCard
+                                className="swipe"
+                                key={person.name}
+                                preventSwipe={['up', 'down']}
+                                onSwipe={(direction) => {
+                                    if (direction === 'right') {
+                                        // Handle swipe right action if needed
+                                    }
                                 }}
+                                onCardLeftScreen={() => setDefaultToPicture(true)}
                             >
-                                <div className={`card__content ${defaultToPicture ? 'visible' : 'hidden'}`}>
-                                    <div className="card__front" style={{ backgroundImage: `url(${person.imageLink})` }}></div>
+                                <div
+                                    className={`card ${flippedCards[index] ? 'flipped' : ''}`}
+                                    onClick={() => {
+                                        const newFlippedCards = [...flippedCards];
+                                        newFlippedCards[index] = !newFlippedCards[index];
+                                        setDefaultToPicture(false);
+                                        setFlippedCards(newFlippedCards);
+                                    }}
+                                >
+                                    <div className={`card__content ${defaultToPicture ? 'visible' : 'hidden'}`}>
+                                        <div className="card__front" style={{ backgroundImage: `url(${person.imageLink})` }}></div>
+                                    </div>
+                                    <div className={`card__content card__bio ${flippedCards[index] ? 'visible' : 'hidden'}`}>
+                                        <h3>{person.name}</h3>
+                                        <p>{person.bio}</p>
+                                        <p>{person.email}</p>
+                                        <p>{person.college}</p>
+                                    </div>
                                 </div>
-                                <div className={`card__content card__bio ${flippedCards[index] ? 'visible' : 'hidden'}`}>
-                                    <h3>{person.name}</h3>
-                                    <p>{person.bio}</p>
-                                    <p>{person.email}</p>
-                                    <p>{person.college}</p>
-                                </div>
-                            </div>
-                        </TinderCard>
-                    ))}
+                            </TinderCard>
+                        ))}
+                </div>
             </div>
         </div>
     );
